@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Form">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anhnen" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_screen" />
+
+    <TextView
+        android:id="@+id/TextForgotPw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="@string/qu_n_m_t_kh_u"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/backround_signin_button"
+        android:text="Đăng nhập"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/TextForgotPw" />
+
+    <EditText
+        android:id="@+id/InputPw"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_input_text"
+        android:hint="@string/m_t_kh_u"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#ECECEC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonSignIn" />
+
+    <EditText
+        android:id="@+id/InputAc"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_input_text"
+        android:hint="@string/t_i_kho_n"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#ECECEC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/InputPw"
+        android:passwordToggleEnabled="true"/>
+
+    <TextView
+        android:id="@+id/TextSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/ng_nh_p_v_o_t_i_kho_n_c_a_b_n"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/InputAc" />
+
+    <TextView
+        android:id="@+id/TextWellcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="20dp"
+        android:text="Wellcome Back"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TextSignIn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

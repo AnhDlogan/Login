@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="forgot_your_password">Forgot your password</string>
+    <string name="password">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="sign_in_to_your_account">Sign in to your account</string>
+    <string name="qu_n_m_t_kh_u">Quên mật khẩu?</string>
+    <string name="m_t_kh_u">Mật khẩu</string>
+    <string name="t_i_kho_n">Tài khoản</string>
+    <string name="ng_nh_p_v_o_t_i_kho_n_c_a_b_n">Đăng nhập vào tài khoản của bạn</string>
+    <string name="ng_nh_p">Đăng nhập</string>
+    <string name="ho_c_ng_nh_p_v_i">Hoặc đăng nhập với</string>
+    <string name="make_your_life_easier">Make your life easier</string>
+    <string name="c_t_i_kho_n_ng_nh_p_ngay">Đã có tài khoản? Đăng nhập ngay</string>
+    <string name="nh_p_l_i_m_t_kh_u">Nhập lại mật khẩu</string>
+    <string name="email">Email</string>
+    <string name="t_n_t_i_kho_n">Tên tài khoản</string>
+    <string name="register">register</string>
+    <string name="start">start</string>
+</resources>

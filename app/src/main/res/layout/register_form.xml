@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register_Form">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/register"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anhnen" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_screen" />
+
+    <TextView
+        android:id="@+id/TextRemind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="@string/c_t_i_kho_n_ng_nh_p_ngay"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_signup_button"
+        android:text="Tạo tài khoản"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/TextRemind" />
+
+    <EditText
+        android:id="@+id/InputRePw"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_input_text"
+        android:hint="@string/nh_p_l_i_m_t_kh_u"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#ECECEC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonSignUp" />
+
+    <EditText
+        android:id="@+id/InputPwRs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_input_text"
+        android:hint="@string/m_t_kh_u"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#ECECEC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/InputRePw" />
+
+    <EditText
+        android:id="@+id/InputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_input_text"
+        android:hint="@string/email"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#ECECEC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/InputPwRs" />
+
+    <EditText
+        android:id="@+id/InputAcRs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_input_text"
+        android:hint="@string/t_n_t_i_kho_n"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#ECECEC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/InputEmail" />
+
+    <TextView
+        android:id="@+id/TextSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tạo tài khoản mới"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/InputAcRs" />
+
+
+    <TextView
+        android:id="@+id/TextWellcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="20dp"
+        android:text="Wellcome To Summonerift"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TextSignIn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

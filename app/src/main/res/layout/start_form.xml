@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/start"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anhnen3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_screen" />
+
+    <View
+        android:id="@+id/ViewFooter"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+        android:id="@+id/ImageFb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ViewFooter" />
+
+    <ImageView
+        android:id="@+id/ImageFb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
+        android:padding="3dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/twitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ViewFooter" />
+
+    <TextView
+        android:id="@+id/TextSignInWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/ho_c_ng_nh_p_v_i"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/ImageFb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/ButtonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_signup_button"
+        android:text="Tạo tài khoản"
+        android:textColor="@color/colorPrimary"
+        android:onClick="btn_signupForm"
+        app:layout_constraintBottom_toTopOf="@+id/TextSignInWith" />
+
+    <Button
+        android:id="@+id/ButtonSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/backround_signin_button"
+        android:text="@string/ng_nh_p"
+        android:textColor="@color/colorPrimary"
+        android:onClick="btn_loginForm"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonSignUp" />
+
+    <TextView
+        android:id="@+id/TextSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/make_your_life_easier"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonSignIn" />
+
+    <TextView
+        android:id="@+id/TextWellcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="20dp"
+        android:text="New Way New Future"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TextSignIn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
